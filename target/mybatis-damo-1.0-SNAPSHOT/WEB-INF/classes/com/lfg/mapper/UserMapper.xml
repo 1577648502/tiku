@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:名称空间-->
+<mapper namespace="com.lfg.mapper.UserMapper">
+    <select id="selectAll" resultType="com.lfg.pojo.User">
+        select * from tb_user
+    </select>
+    <select id="selectAll1" resultType="com.lfg.pojo.User">
+        SELECT * from titles where title like '%${s}%';
+    </select>
+</mapper>
